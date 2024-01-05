@@ -39,10 +39,10 @@ def button_clicked():
             sonucu_yaz.config(text="Obezite 2.sınıf")
         elif sonuc >= 40:
             sonucu_yaz.config(text="Obezite tedavi gerekiyor.")
-        '''else:
-            print("Geçersiz değerler. Lütfen boy ve kilo değerlerini kontrol edin.") '''
-    except ValueError:
-        print("Geçersiz bir değer girdiniz. Lütfen sayısal bir değer girin.")
+        else:
+            sonucu_yaz.config(text="Geçersiz değerler. Lütfen boy ve kilo değerlerini kontrol edin.")
+    except:
+        sonucu_yaz.config(text="Geçersiz bir değer girdiniz. Lütfen sayısal bir değer girin.")
     #print("Vücut Kitle İndeksi:", sonuc)
 
 
